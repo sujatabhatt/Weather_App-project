@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Agra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name..." value="Agra">
+            <select id="daysSelect">
+                <option value="1">1 Day</option>
+                <option value="2">2 Days</option>
+                <option value="3" selected>3 Days</option>
+                <option value="4">4 Days</option>
+                <option value="5">5 Days</option>
+                <option value="6">6 Days</option>
+                <option value="7">7 Days</option>
+            </select>
+            <button id="searchBtn">Get Weather</button>
+        </div>
+
+        <div class="weather-card">
+            <div class="current-weather">
+                <div class="weather-icon">
+                    <svg id="mainWeatherIcon" width="80" height="80" viewBox="0 0 100 100">
+                        <!-- Weather icon will be inserted here -->
+                    </svg>
+                </div>
+                <div class="temperature">
+                    <span id="currentTemp">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="weather-info">
+                    <div class="location">
+                        <span id="cityName">--</span>, <span id="regionName">--</span>
+                    </div>
+                    <div class="condition" id="weatherCondition">--</div>
+                    <div class="datetime">
+                        <span id="currentDate">Wednesday, 11:00 am</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="temperature-chart">
+                <canvas id="tempChart" width="400" height="80"></canvas>
+            </div>
+
+            <div class="forecast">
+                <div class="forecast-days" id="forecastDays">
+                    <!-- Forecast days will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+        <div class="error" id="error" style="display: none;">
+            <p>Failed to load weather data. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
