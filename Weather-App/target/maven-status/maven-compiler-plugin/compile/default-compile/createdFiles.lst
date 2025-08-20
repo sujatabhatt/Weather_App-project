@@ -1,0 +1,15 @@
+com\cfs\Weather_App\dto\Astro.class
+com\cfs\Weather_App\dto\Day.class
+com\cfs\Weather_App\service\WeatherService.class
+com\cfs\Weather_App\dto\WeatherResponse.class
+com\cfs\Weather_App\dto\Forecast.class
+com\cfs\Weather_App\dto\Current.class
+com\cfs\Weather_App\dto\DayTemp.class
+com\cfs\Weather_App\WeatherAppApplication.class
+com\cfs\Weather_App\dto\Condition.class
+com\cfs\Weather_App\dto\Hour.class
+com\cfs\Weather_App\dto\WeatherForeCast.class
+com\cfs\Weather_App\dto\Location.class
+com\cfs\Weather_App\dto\Root.class
+com\cfs\Weather_App\controller\Controller.class
+com\cfs\Weather_App\dto\Forecastday.class
